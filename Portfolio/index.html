@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenifer Raji - Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Your CSS files (assuming they are in css/ folder) -->
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/ionicons.min.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Custom Styles for the new portfolio */
+
+    /* Attractive animated background using CSS (optional) */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Navbar styles (keep your styles or adjust as needed) */
+    /* ... existing styles ... */
+
+    /* Header styles */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    /* Sections styling */
+    section {
+      padding: 50px 20px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Headings */
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #ffd700;
+    }
+
+    /* Profile & Info styles */
+    .profile-img {
+      max-width: 250px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin: 0 auto 20px auto;
+    }
+
+    /* Skills Progress Bars */
+    .skill {
+      margin-bottom: 15px;
+    }
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .progress {
+      background: rgba(255,255,255,0.2);
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 10px;
+      background-color: #ffd700;
+      width: 0;
+      transition: width 1.5s ease-in-out;
+    }
+
+    /* Projects & Experience cards */
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+    /* Achievements and counters */
+    .counter {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .counter h3 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    /* Buttons */
+    .btn {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background-color: #e6c200;
+    }
+
+    /* Footer styles */
+    footer {
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 999;">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Jenifer Raji</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero / Home -->
+<section id="home" style="height: 100vh; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); text-align: center;">
+  <div>
+    <h1 style="font-size: 3rem; margin-bottom: 20px;">Jenifer Raji</h1>
+    <h2 style="font-size: 1.5rem;">Manual Tester | 2 Years of Experience</h2>
+    <a href="#about" class="btn" style="margin-top:20px;">Learn More About Me</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container" style="margin-top:40px;">
+  <h2>About Me</h2>
+  <div style="text-align:center; max-width:700px; margin:auto;">
+    <img src="images/me.jpg" alt="Jenifer Raji" class="profile-img" />
+    <p>I'm a dedicated Manual Tester with 2+ years of experience. I excel in test planning, execution, bug reporting, and ensuring quality standards. Passionate about delivering flawless software and continuous improvement.</p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container">
+  <h2>Skills & Competencies</h2>
+  <div class="skill">
+    <div class="skill-name">Manual Testing</div>
+    <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-name">SQL</div>
+    <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-name">Automation Tools</div>
+    <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-name">Bug Tracking & Management</div>
+    <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-name">Communication & Documentation</div>
+    <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="container">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <h3>Manual Tester at XYZ Pvt Ltd</h3>
+    <p><strong>Jan 2023 - Present</strong></p>
+    <ul>
+      <li>Reviewed requirements and created detailed test cases</li>
+      <li>Performed functional and regression testing</li>
+      <li>Reported bugs and tracked issues using Jira</li>
+      <li>Collaborated with developers for bug fixing</li>
+    </ul>
+  </div>
+  <!-- Add more experience cards as needed -->
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Test Automation Framework</h3>
+    <p>Developed automation scripts using Selenium WebDriver to streamline testing processes.</p>
+  </div>
+  <div class="card">
+    <h3>Bug Tracking Dashboard</h3>
+    <p>Built a dashboard for bug tracking and status monitoring using Excel and Jira.</p>
+  </div>
+  <!-- Add more project cards as needed -->
+</section>
+
+<!-- Achievements & Counters -->
+<section id="achievements" class="container text-center">
+  <h2>My Achievements</h2>
+  <div class="counter">
+    <h3 class="number" data-count="20">0</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="counter">
+    <h3 class="number" data-count="15">0</h3>
+    <p>Bug Fixes & Reports</p>
+  </div>
+  <div class="counter">
+    <h3 class="number" data-count="10">0</h3>
+    <p>Certifications</p>
+  </div>
+</section>
+
+<!-- Github & Hobbies -->
+<section id="more" class="container">
+  <h2>More Projects & Hobbies</h2>
+  <p>I love solving complex testing challenges, learning new tools, and sharing knowledge.</p>
+  <p><a href="https://github.com/yourgithub" class="btn" target="_blank">Visit my GitHub</a></p>
+  <h3>Hobbies</h3>
+  <ul>
+    <li>Reading Books</li>
+    <li>Travel & Photography</li>
+    <li>Music & Dancing</li>
+    <li>Gardening</li>
+  </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
+  <h2>Contact Me</h2>
+  <div style="text-align:center;">
+    <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+    <p><i class="fas fa-phone"></i> +91 81429748</p>
+    <p><i class="fas fa-envelope"></i> jenichristo14@gmail.com</p>
+    <a href="mailto:jenichristo14@gmail.com" class="btn">Send Email</a>
+    <div style="margin-top:15px;">
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear());</script> Jenifer Raji. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Animate progress bars
+  document.querySelectorAll('.progress-bar').forEach(bar => {
+    let width = bar.style.width;
+    bar.style.width = '0';
+    setTimeout(() => {
+      bar.style.width = width;
+    }, 100);
+  });
+
+  // Animate counters
+  document.querySelectorAll('.number').forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-count');
+      const count = +counter.innerText;
+      const speed = 50;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + target / speed);
+        setTimeout(updateCount, 50);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+</script>
+</body>
+</html>
